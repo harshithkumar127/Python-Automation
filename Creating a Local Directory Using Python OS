@@ -1,1 +1,8 @@
-
+directory=today_1(folder_name) pass as a variable.
+    parent_directory="C:\\Users\\path\\"
+    path_created = os.path.join(parent_directory,directory)
+    if not os.path.exists(path_created):
+        os.mkdir(path_created)
+    else:
+        shutil.rmtree(path_created)
+        os.mkdir(path_created)
